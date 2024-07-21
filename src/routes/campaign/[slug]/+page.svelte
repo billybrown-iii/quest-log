@@ -6,12 +6,17 @@
 
     // if you weant to show the page instantly
     // then update it with the fetched data
-    // then use this approach:
+    // then use this approach*:
     onMount(() => {
         setTimeout(() => {
             value = `fetched data for slug:  ${data.slug}`
         }, 1000)
     })
+
+    // *note on the above - it might be a bad practice
+    // looks like the general svelte philosophy is that data fetching lives in the .js file load function
+    // TODO try this instead
+    // https://kit.svelte.dev/docs/load#streaming-with-promises
 </script>
 
 {#if value}
