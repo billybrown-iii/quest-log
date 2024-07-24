@@ -39,3 +39,22 @@ A tool to help track and visualize the current and historical quests for Table T
 ### Editors
 - control who can view/edit a quest they created (defaults to all users have full edit/view rights)
 - control who can view/edit a milestone they created (defaults to all users have full edit/view rights)
+
+
+### Phase 2?
+- Answer the questions:
+	- What has a specific character done?
+
+## Revealed Game-play Knowledge
+- Players and GMs can run multiple character simultaneously
+- reasons for permissions
+	- Players may have secret goals they only want to share with the GM and not the rest of the party
+	- A GM may want exclusive full control over the log to make sure it conforms to a specific narrative style
+- Current goals are extremely malleable; they change based on the whims of the players.  They are often unplanned.
+- On
+
+## Design Decisions
+- Frontend: svelte
+- Database type: SQL or no-SQL?
+	- current implementation for prototyping is just a file
+	
