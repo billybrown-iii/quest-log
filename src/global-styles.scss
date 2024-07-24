@@ -3,3 +3,12 @@ $example-color: cornflowerblue;
 .example-class {
     color: $example-color;
 }
+
+.button {
+    padding: 8px;
+    border-radius: 4px;
+    border: 2px solid #999;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
