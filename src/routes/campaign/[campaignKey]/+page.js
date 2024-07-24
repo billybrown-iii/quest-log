@@ -5,7 +5,7 @@ export async function load ({params}) {
     
     // return new Promise(resolve => {
     //     setTimeout(() => {
-    //         resolve({value: `You traveled to slug: ${params.slug}`})
+    //         resolve({value: `You traveled to campaig key: ${params.campaignKey}`})
     //     }, 400)
     // })
 
