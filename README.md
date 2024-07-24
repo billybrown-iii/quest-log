@@ -55,7 +55,7 @@ A tool to help track and visualize the current and historical quests for Table T
 
 ## Design Decisions
 - Frontend: svelte
-	- Progress bar type `source` from https://loading.io/css/
+	- Progress bar type `ellipsis` from https://loading.io/css/
 - Database type: SQL or no-SQL?
 	- current implementation for prototyping is just a file
 
