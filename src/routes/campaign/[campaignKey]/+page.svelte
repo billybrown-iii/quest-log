@@ -9,7 +9,7 @@
     // then use this approach*:
     onMount(() => {
         setTimeout(() => {
-            value = `fetched data for slug:  ${data.slug}`
+            value = `fetched data for campaign key:  ${data.campaignKey}`
         }, 1000)
     })
 

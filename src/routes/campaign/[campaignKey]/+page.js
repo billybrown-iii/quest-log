@@ -9,5 +9,5 @@ export async function load ({params}) {
     //     }, 400)
     // })
 
-    return {slug: params.slug};
+    return {campaignKey: params.campaignKey};
 }
