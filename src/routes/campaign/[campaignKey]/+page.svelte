@@ -4,7 +4,7 @@
 
     let value = 'loading...';
 
-    // if you weant to show the page instantly
+    // if you want to show the page instantly
     // then update it with the fetched data
     // then use this approach*:
     onMount(() => {
