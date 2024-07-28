@@ -2,9 +2,11 @@
     import '../global-styles.scss'
 </script>
 
-<nav>
-	cool navbar
-</nav>
+<div class="mobile-sized-container">
+<a class="button" href="/">Quest tracker</a>
+<br>
+<hr>
 
-<slot></slot>
+    <slot></slot>
+</div>
 
