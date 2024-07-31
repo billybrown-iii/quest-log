@@ -3,7 +3,9 @@
 </script>
 
 <div class="mobile-sized-container">
-<a class="button" href="/">Quest tracker</a>
+    <nav>
+        <a class="button" href="/">Quest tracker</a>
+    </nav>
 <br>
 <hr>
 
