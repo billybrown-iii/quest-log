@@ -1,12 +1,9 @@
 <script>
-    import { currentCampaign } from '../../../stores.js';
+    export let data;
 
-    let campaign;
-  
-    campaign = $currentCampaign;
-
-    console.log(campaign);
+    console.log(data)
 </script>
 
-<div>campaign page (logged campaign info to console)</div>
+<div>Logged campaign info to console</div>
+
 

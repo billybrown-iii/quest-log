@@ -5,7 +5,7 @@ const CampaignService = {};
 
 CampaignService.fetch = (key) => {
     const campaign = fakeData.campaigns.find(x => x.key == key);
-    if (!campaign) throw 'not found';
+    if (!campaign) throw 'campaign not found';
 
     return {
         campaign,

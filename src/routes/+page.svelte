@@ -1,32 +1,27 @@
 <script>
     import {goto} from '$app/navigation';
-    import { CampaignService } from '$lib';
-    import { currentCampaign } from '../stores';
 
     let campaignKey = '';
+    let buttonText = 'Find campaign'
 
-    function findCampaign () {
-        let foundCampaign;
-        try {
-            foundCampaign = CampaignService.fetch(campaignKey)
-        } catch (e) {
-            // TODO gracefully handle campaign not found error
-            // also, make it async and add loading indicator
-            alert(e)
-            return
-        }
-
-        currentCampaign.set(foundCampaign);
-
-        goto(`/campaign/${campaignKey}`);
+    function routeToCampaignPage (event) {
+        // if not for this, the automatic page reload prevents the goto from working
+        event.preventDefault();
+        
+        if (!campaignKey) return alert('type something.  pls')
+        
+        buttonText = 'Loading campaign...'
+        
+        goto(`/campaign/${campaignKey}`)
     }
 </script>
 
-<!-- TODO associate the input w/ the button so you can hit enter to submit -->
-<input type="text" bind:value={campaignKey} placeholder="Enter key.  ex: a12d3" />
-<button type="button" class="button" on:click={findCampaign}>
-    Find campaign
-</button>
+ <form on:submit={routeToCampaignPage}>
+     <input type="text" bind:value={campaignKey} placeholder="Enter key.  ex: a12d3" />
+     <button type="submit" class="button">
+         {buttonText}
+     </button>
+ </form>
 
 <style lang='scss'>
     
